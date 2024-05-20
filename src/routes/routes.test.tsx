@@ -1,35 +1,35 @@
-import { describe, expect } from 'vitest';
-import { render, screen } from '@testing-library/react';
-import { RouterProvider, createMemoryRouter } from 'react-router-dom';
-import { routes } from './routes';
-import { Home } from '~/pages/Home';
-import { CenteredContainer } from '~/components/Layout/CenteredContainer';
+import { describe, expect } from "vitest";
+import { render, screen } from "@testing-library/react";
+import { RouterProvider, createMemoryRouter } from "react-router-dom";
+import { routes } from "./routes";
+import { Home } from "~/pages/Home";
+import { CenteredContainer } from "~/components/Layout/CenteredContainer";
 
-describe('routes', () => {
-  test.skip('renders the Home component for the root path', () => {
+describe("routes", () => {
+  test("renders the Home component for the root path", () => {
     const memoryRouter = createMemoryRouter(routes.routes, {
-      initialEntries: ['/'],
+      initialEntries: ["/"],
     });
 
     render(<RouterProvider router={memoryRouter} />);
 
-    expect(screen.getByText('Home')).toBeInTheDocument();
+    expect(screen.getByText("None Selected")).toBeInTheDocument();
   });
 
-  test('renders the ErrorBoundary on route error', () => {
+  test("renders the ErrorBoundary on route error", () => {
     const errorRoutes = [
       {
-        path: '/',
+        path: "/",
         element: <Home />,
         errorElement: <CenteredContainer>Oops!</CenteredContainer>,
       },
     ];
     const memoryRouter = createMemoryRouter(errorRoutes, {
-      initialEntries: ['/non-existent-path'],
+      initialEntries: ["/non-existent-path"],
     });
 
     render(<RouterProvider router={memoryRouter} />);
 
-    expect(screen.getByText('Oops!')).toBeInTheDocument();
+    expect(screen.getByText("Oops!")).toBeInTheDocument();
   });
 });

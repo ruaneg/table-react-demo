@@ -15,7 +15,7 @@
 
 If there was more time, I would have:
 
-- Add automated functional testing with Cypress or similar.
+- Add automated functional testing with Cypress or similar. (Unit Test is at 96%)
 - Made the table more responsive.
 - Add i18n support for text.
 - Make a better Error Boundary with error graphic for specific error types.

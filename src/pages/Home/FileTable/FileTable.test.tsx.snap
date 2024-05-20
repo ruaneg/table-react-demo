@@ -1,4 +1,4 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`FileTable > renders correctly with given files 1`] = `
 .c4 {
@@ -173,6 +173,7 @@ exports[`FileTable > renders correctly with given files 1`] = `
           <input
             aria-label="Select smss.exe"
             disabled=""
+            role="checkbox"
             type="checkbox"
           />
         </td>
@@ -212,6 +213,7 @@ exports[`FileTable > renders correctly with given files 1`] = `
         >
           <input
             aria-label="Select netsh.exe"
+            role="checkbox"
             type="checkbox"
           />
         </td>
@@ -267,6 +269,7 @@ exports[`FileTable > renders correctly with given files 1`] = `
         >
           <input
             aria-label="Select uxtheme.dll"
+            role="checkbox"
             type="checkbox"
           />
         </td>
