@@ -1,6 +1,6 @@
-import { FaDownload } from 'react-icons/fa';
-import styled from 'styled-components';
-import { IconContainer } from '../Icons/Icons.styles';
+import { FaDownload } from "react-icons/fa";
+import styled from "styled-components";
+import { IconContainer } from "../Icons/Icons.styles";
 
 const StyledDownloadButton = styled.button`
   border: 0;
@@ -14,7 +14,7 @@ const StyledDownloadButton = styled.button`
     color: dodgerblue;
   }
   &:disabled {
-    cursor: not-allowed;
+    pointer-events: none;
     opacity: 0.6;
   }
 `;
@@ -31,7 +31,7 @@ const DownloadButton = ({
 }) => {
   return (
     <StyledDownloadButton
-      aria-label={'Download Selected files'}
+      aria-label={"Download Selected files"}
       onClick={handleOnClick}
       disabled={disabled}
       {...rest}
