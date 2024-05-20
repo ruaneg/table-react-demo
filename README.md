@@ -68,4 +68,3 @@ yarn preview
 - `lint`: runs the linter in all components and pages
 - `prettify`: runs prettier to format all components and pages
 - `typecheck`: runs the type checker in all components and pages
-- `generate`: runs plop to generate component files
