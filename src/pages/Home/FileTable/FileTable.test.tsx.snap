@@ -48,7 +48,6 @@ exports[`FileTable > renders correctly with given files 1`] = `
   box-shadow: none;
   border-radius: 0px;
   font-size: 1rem;
-  color: #000000d6;
   cursor: pointer;
 }
 
@@ -57,7 +56,7 @@ exports[`FileTable > renders correctly with given files 1`] = `
 }
 
 .c2:disabled {
-  cursor: not-allowed;
+  pointer-events: none;
   opacity: 0.6;
 }
 
