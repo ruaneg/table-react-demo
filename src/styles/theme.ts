@@ -3,7 +3,7 @@ export const theme = {
     inherit: "inherit",
     current: "currentColor",
     transparent: "transparent",
-    black: "#000",
+    black: "#000000d6",
     white: "#fff",
     gray: "#6a6d72",
     slate: {

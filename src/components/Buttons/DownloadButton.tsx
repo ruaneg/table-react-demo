@@ -8,7 +8,6 @@ const StyledDownloadButton = styled.button`
   box-shadow: none;
   border-radius: 0px;
   font-size: 1rem;
-  color: #000000d6;
   cursor: pointer;
   &:active {
     color: dodgerblue;
