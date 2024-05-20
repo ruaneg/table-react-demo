@@ -64,7 +64,8 @@ yarn preview
 - `test`: runs vitest in watch mode
 - `test:coverage`: runs vitest returning coverage table
 - `test:ci`: runs vitest once in CI
+- `test:update`: updates vitest snapshots
 - `lint`: runs the linter in all components and pages
-- `format`: runs prettier to format all components and pages
+- `prettify`: runs prettier to format all components and pages
 - `typecheck`: runs the type checker in all components and pages
 - `generate`: runs plop to generate component files
