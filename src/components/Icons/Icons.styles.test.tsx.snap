@@ -1,0 +1,12 @@
+// Vitest Snapshot v1
+
+exports[`IconContainer > renders correctly with default styles 1`] = `
+.c0 {
+  padding: 0 8px;
+  font-size: 0.875rem;
+}
+
+<span
+  class="c0"
+/>
+`;

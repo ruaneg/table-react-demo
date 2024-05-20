@@ -1,0 +1,44 @@
+// Vitest Snapshot v1
+
+exports[`TableHeader > renders correctly with given headers 1`] = `
+.c1 {
+  padding: 8px;
+  border: 1px solid #f1efef;
+  border-left: none;
+  border-right: none;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.c0 {
+  background: white;
+  border: 1px solid #f1efef;
+}
+
+.c0:hover {
+  background: #f1f1f1;
+}
+
+<thead>
+  <tr
+    class="c0"
+  >
+    <th
+      class="c1"
+    >
+      Name
+    </th>
+    <th
+      class="c1"
+    >
+      Age
+    </th>
+    <th
+      class="c1"
+    >
+      Address
+    </th>
+  </tr>
+</thead>
+`;
